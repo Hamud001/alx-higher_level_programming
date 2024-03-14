@@ -1,13 +1,13 @@
 #!/usr/bin/python3
 def add_arg(argv):
-    num = len(argv) - 1
-    if num == 0:
-        print("{:d}".format(num))
+    m = len(argv) - 1
+    if m == 0:
+        print("{:d}".format(m))
         return
     else:
         i = 1
         add = 0
-        while i <= num:
+        while i <= m:
             add += int(argv[i])
             i += 1
         print("{:d}".format(add))
