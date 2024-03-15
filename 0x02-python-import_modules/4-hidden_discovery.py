@@ -1,7 +1,10 @@
 #!/usr/bin/python3
-if __name__ == "__main__":
-    from hidden_4 import
-    num = dir()
-    for i in range(0, len(num)):
-        if num[i][:2] !="__":
-           print("{:s}".format(num[i]))
+
+if _name_ == "_main_":
+    """Print all names defined by compiled module."""
+    import hidden_4
+
+    names = dir(hidden_4)
+    for name in names:
+        if name[:2] != "":
+            print(name)
