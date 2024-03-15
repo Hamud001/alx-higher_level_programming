@@ -8,17 +8,17 @@ if __name__ == "__main__":
         exit(1)
 
     ops = argv[2]
-    int1 = int(argv[1])
-    int2 = int(argv[3])
+    sum1 = int(argv[1])
+    sum2 = int(argv[3])
 
     if ops is '+':
-        print("{:d} + {:d} = {:d}".format(int1, int2, add(int1, int2)))
+        print("{:d} + {:d} = {:d}".format(sum1, sum2, add(sum1, sum2)))
     elif ops is '-':
-        print("{:d} - {:d} = {:d}".format(int1, int2, sub(int1, int2)))
+        print("{:d} - {:d} = {:d}".format(sum1, sum2, sub(sum1, sum2)))
     elif ops is '*':
-        print("{:d} * {:d} = {:d}".format(int1, int2, mul(int1, int2)))
+        print("{:d} * {:d} = {:d}".format(sum1, sum2, mul(sum1, sum2)))
     elif ops is '/':
-        print("{:d} / {:d} = {:d}".format(int1, int2, div(int1, int2)))
+        print("{:d} / {:d} = {:d}".format(sum1, sum2, div(sum1, sum2)))
     else:
         print("Unknown operator. Available operators: +, -, * and /")
         exit(1)
