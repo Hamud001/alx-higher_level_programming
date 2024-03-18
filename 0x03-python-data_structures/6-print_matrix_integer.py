@@ -3,7 +3,7 @@
 
 
 def print_matrix_integer(matrix=[[]]):
-    """function that prints a matrix of integerss."""
+    """function that prints matrix of integers."""
     for n in range(len(matrix)):
         for j in range(len(matrix[n])):
                 print("{:d}".format(matrix[n][j]), end="")
