@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""A class Student."""
+"""Defines a class Student."""
 
 
 class Student:
@@ -18,7 +18,7 @@ class Student:
         self.age = age
 
     def to_json(self, attrs=None):
-        """Retrieve dictionary representation of the Student.
+        """Get a dictionary representation of the Student.
 
         If attrs is a list of strings, represents only those attributes
         included in the list.
@@ -32,10 +32,10 @@ class Student:
         return self.__dict__
 
     def reload_from_json(self, json):
-        """Replace attributes of the Student.
+        """Replace all attributes of the Student.
 
         Args:
-            json (dict): The value to replace attributes with.
+            json (dict): The key/value pairs to replace attributes with.
         """
         for k, v in json.items():
             setattr(self, k, v)
